@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.kollby.MainActivity" >
+
+    <item
+        android:id="@+id/action_showAll"
+        android:icon="@drawable/ic_action_refresh"
+        android:title="Refresh"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/filter"
+        android:title="Show">
+        <menu>
+            <item
+                android:id="@+id/filter_none"
+                android:title="All">
+            </item>
+            <item
+                android:id="@+id/filter_in"
+                android:title="Incoming">
+            </item>
+            <item
+                android:id="@+id/filter_out"
+                android:title="Outgoing">
+            </item>
+        </menu>
+    </item>
+
+</menu>

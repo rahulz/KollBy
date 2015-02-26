@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/callerImg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/caller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"                
+                android:text="Rahul"
+                android:textColor="#CC0033"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/leaneaL3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10px"
+                android:paddingLeft="4px"
+                 >
+                
+                <ImageView
+                    android:id="@+id/typeImg"
+                    android:layout_width="30px"
+                    android:layout_height="30px"
+                    android:layout_gravity="center_vertical"
+                    android:paddingBottom="3px" />
+
+                <TextView
+                    android:id="@+id/calltime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingBottom="4px"
+                    android:paddingLeft="10px"
+                    android:text="9:23 PM"
+                    android:textColor="#3399FF"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/callDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="17dp"
+        android:text="00:02:05" />
+
+</RelativeLayout>
